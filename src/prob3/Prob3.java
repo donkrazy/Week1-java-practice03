@@ -13,12 +13,16 @@ public class Prob3 {
 	}
 	
 	public static char[] reverse(String str){
-		/* 구현코드 */
-		
-		return null;
+		int length = str.length();
+        char[] list = new char[length];
+        for (int i = 0; i < length; i++) {
+            list[i] = str.charAt(length-1-i);
+        }
+        return list;
 	}
 	
 	public static void printCharArray(char[] array){
-		/* 구현코드 */
-	}
+        System.out.print(array);
+        System.out.println("\n");
+    }
 }
